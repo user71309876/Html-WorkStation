@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <form action="">
+            <p>
+                <label for="id_txt">text : </label>
+                <input id="id_txt" type="text" name="id" value="default value">
+            </p>
+            <!--
+                label : 위의 text가 어떤 태그에 대한 label인지를 설명해준다
+                        그러면서 label과 tag는 서로 연결된다
+                        label을 눌러도 input text window에 커서가 간다
+                    for="~~~" : 이 label이 어떤 태그에 대한 label인지 설명
+
+                id="~~~" : 이 태그가 어떤 label에 대한 태그인지 설명
+            -->
+            <p>
+                <label>
+                    password : <input type="password" name="pwd" value="default value">
+                </label>
+            </p>
+            <!--
+                위와 같이 label 태그 안에 label과 input 태그를 같이 넣어도 첫번째 label과 같이 동작한다
+            -->
+            <p>
+                <label>
+                    textarea : <textarea cols="50" rows="2">default value</textarea>
+                </label>
+            </p>
+            <p>
+                <input id="color" type="checkbox" name="color" value="red">
+                <label for="color">붉은색</label>
+                <!--
+                    checkbox에서도 동작한다
+                -->
+            </p>
+        </form>
+    </body>
+</html>

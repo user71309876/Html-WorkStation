@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="http://localhost/method.php" method="post">
+            <input type="text" name="id">
+            <input type="password" name="pwd">
+            <input type="submit">
+        </form>
+        <!--
+            method="get" : 초기 form의 method의 default 값은 get으로 되어 있음,
+                           서버쪽으로 value를 전달할 때 value가 포함된 url을 이용하여 전달함
+                           (ex. http://localhost/method.php?id=egoing&pwd=1111)
+                           그러면 누군가 url을 보고 나쁜 마음을 먹을 수 있음
+                           그걸 보안한 것이 post 방식
+            method="post" : 기존 url로 전달하는 방식이 아닌 숨겨서 전달하는 방식
+                            (자세한 건 나중에 배우자)
+        -->
+    </body>
+</html>

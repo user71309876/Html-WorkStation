@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8"> 
+    </head>
+    <body>
+        <form action="http://localhost/colar.php">
+            <h1>Color</h1>
+            <select name="color">
+                <option value="red1">red</option>
+                <option value="black1">black</option>
+                <option value="blue1">blue</option>
+            </select>
+            <h1>Color2 (multiple seletion)</h1>
+            <select name="color2" multiple>
+                <option value="red1">red</option>
+                <option value="black1">black</option>
+                <option value="blue1">blue</option>
+            </select>
+            <input type="submit">
+        </form>
+        <!--
+        select : dropdown list를 만들어줌
+            name : select value를 어떤 이름(변수)로 서버에 전송할지를 받음
+            multiple : 다중 선택 가능한 속성임, content가 없음,
+                       ctrl을 써야지만 다중 선택 가능
+        option : 선택할 텍스트를 content에 넣을 수 있음
+            value : 서버에 전송할 값을 받음
+        -->
+    </body>
+</html>
